@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Converter from './components/Converter';
 
 const AppWrapper = styled.div`
   background-color: var(--bg-color);
@@ -10,7 +11,11 @@ const AppWrapper = styled.div`
 `;
 
 function App() {
-  return <AppWrapper></AppWrapper>;
+  return (
+    <AppWrapper>
+      <Converter />
+    </AppWrapper>
+  );
 }
 
 export default App;

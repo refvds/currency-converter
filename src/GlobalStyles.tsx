@@ -12,6 +12,10 @@ const GlobalStyles = createGlobalStyle`
     max-width: 100%;
   }
   
+  li {
+    list-style: none;
+  }
+  
   input, button, textarea, select {
     font: inherit;
   }
@@ -20,13 +24,21 @@ const GlobalStyles = createGlobalStyle`
     overflow-wrap: break-word;
 }
 
+
+button,a {
+  cursor: pointer;
+}
+
 :root {
   --bg-color: background-color: #8EC5FC;
   --bg-img: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
 
 }
 
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 `;
 export default GlobalStyles;
